@@ -19,20 +19,20 @@
         <div class="flex justify-end p-2">
             <div class="px-3 m-2 flex bg-blue-50 rounded-2xl">
                 <img class="my-5 ml-4" src="assets/checkbox.png" alt="">
-                <h1 class="text-xl font-bold py-5 px-2">23</h1>
+                <h1 id="increaseDisplay" class="text-xl font-bold py-5 px-2">23</h1>
             </div>
-            <img class="bg-blue-50 rounded-full p-2 m-3" src="assets/theme-btn.png" alt="">
+            <img id="clickableImage" class="bg-blue-50 rounded-full p-2 m-3" src="assets/theme-btn.png" alt="">
         </div>
     </navbar>
 
     <div class="flex">
         <main class="bg-white rounded-md mt-5">
             <div class="p-1 flex justify-between">
-                <div class="bg-blue-50 rounded-md flex p-6 m-5">
-                    <div class="m-2 bg-white rounded-full"><img class=" m-5" src="assets/checkbox.png" alt=""></div>
-                    <div class="px-3 my-4">
+                <div class="flex bg-blue-50 py-5 px-5 m-5 rounded-md">
+                    <div class="p-4 bg-white rounded-full m-6"><img src="assets/checkbox.png" alt=""></div>
+                    <div class="m-3">
                         <h1 class="font-semibold text-sm">Task Assigned</h1>
-                        <h1 class="font-bold text-2xl">05</h1>
+                        <h1 id="numberDisplay" class="font-bold text-2xl">6</h1>
                     </div>
                 </div>
                 <div class="bg-gradient-to-r from-blue-700 to-blue-300 flex rounded-md my-5 p-5">
@@ -40,8 +40,8 @@
                     <h1 class="px-10 text-2xl text-white font-semibold">Discover Something <br> New Today!</h1>
                 </div>
                 <div class="flex bg-blue-50 py-5 px-5 m-5 rounded-md">
-                    <div class="p-5 bg-white rounded-full m-3"><img src="assets/calender.png" alt=""></div>
-                    <h1 class="py-2 text-xl">Wed ,<span class="font-bold"><br>Jul 28 2025</span></h1>
+                    <div class="p-4 bg-white rounded-full m-6"><img src="assets/calender.png" alt=""></div>
+                    <h1 id="date-and-day" class="py-5 text-xl font-semibold">Wed ,<span class="font-bold">Jul 28 2025</span></h1>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">21 March 2025</h1>
                         </div>
-                        <button class="bg-blue-800 text-white px-6 py-2 rounded-md">
+                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -77,7 +77,7 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">22 March 2025</h1>
                         </div>
-                        <button class="bg-blue-800 text-white px-6 py-2 rounded-md">
+                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -96,7 +96,7 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">23 March 2025</h1>
                         </div>
-                        <button class="bg-blue-800 text-white px-6 py-2 rounded-md">
+                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -115,7 +115,7 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">24 March 2025</h1>
                         </div>
-                        <button class="bg-blue-800 text-white px-6 py-2 rounded-md">
+                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -133,7 +133,7 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">25 March 2025</h1>
                         </div>
-                        <button class="bg-blue-800 text-white px-6 py-2 rounded-md">
+                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -152,7 +152,7 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">26 March 2025</h1>
                         </div>
-                        <button class="bg-blue-800 text-white px-6 py-2 rounded-md">
+                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -183,6 +183,8 @@
                 PM</p>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
