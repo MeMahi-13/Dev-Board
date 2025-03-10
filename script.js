@@ -62,7 +62,43 @@ function showDateAndDay() {
     const month = currentDate.toLocaleString('en-us', { month: 'short' });
     const year = currentDate.getFullYear();
 
-    document.getElementById('date-and-day').innerText = `${day}, ${date} ${month} ${year}`;
+    document.getElementById('date-and-day').innerHTML = `${day},<br> ${date} ${month} ${year}`;
   }
 
   showDateAndDay();
+
+//   activity
+
+function myFunction() {
+    alert("Board updated successfully!");
+  }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const activityEl = document.getElementById('activity');
+
+    const addActivity = (taskText) => {
+        const currentTime = new Date().toLocaleTimeString();
+        const newActivity = document.createElement('p');
+        newActivity.className = "bg-blue-50 p-2 mt-2 rounded-md";
+        newActivity.innerHTML = `You have completed the task: ${taskText} at ${currentTime}`;
+        activityEl.appendChild(newActivity);
+    };
+
+    document.querySelectorAll('.increaseButton').forEach(button => {
+        button.addEventListener('click', function () {
+            const taskContainer = this.closest('.task-container'); 
+            const taskText = taskContainer.querySelector('.title').innerText; 
+            addActivity(taskText);
+        });
+    });
+
+    const clearHistoryButton = document.getElementById('activity-button');
+        clearHistoryButton.addEventListener('click', function () {
+            activityEl.innerHTML = '';
+        });
+});
+
+// new page
+document.getElementById('link-page').addEventListener('click', function () {
+    window.open('blogs.html');
+});

@@ -35,22 +35,23 @@
                         <h1 id="numberDisplay" class="font-bold text-2xl">6</h1>
                     </div>
                 </div>
-                <div class="bg-gradient-to-r from-blue-700 to-blue-300 flex rounded-md my-5 p-5">
+                <div id="link-page" class="bg-gradient-to-r from-blue-700 to-blue-300 flex rounded-md my-5 p-5">
                     <div class="px-5"><img src="assets/board.png" alt=""></div>
                     <h1 class="px-10 text-2xl text-white font-semibold">Discover Something <br> New Today!</h1>
                 </div>
                 <div class="flex bg-blue-50 py-5 px-5 m-5 rounded-md">
                     <div class="p-4 bg-white rounded-full m-6"><img src="assets/calender.png" alt=""></div>
-                    <h1 id="date-and-day" class="py-5 text-xl font-semibold">Wed ,<span class="font-bold">Jul 28 2025</span></h1>
+                    <h1 id="date-and-day" class="py-5 text-xl font-semibold">Wed ,<span class="font-bold">Jul 28
+                            2025</span></h1>
                 </div>
             </div>
 
             <div class="grid grid-cols-3 border-t-2 border-dashed border-blue-200">
 
 
-                <div class="bg-blue-50 rounded-md p-5 m-5">
+                <div class="task-container bg-blue-50 rounded-md p-5 m-5">
                     <h1 class="bg-white p-1 my-2 rounded-md inline-flex text-sm">ShopEase</h1>
-                    <h1 class="text-xl font-semibold">Fix Mobile Button Issue</h1>
+                    <h1 id="task" class="title text-xl font-semibold">Fix Mobile Button Issue</h1>
                     <p class="line-clamp-2 p-1 px-2 rounded-md bg-white my-2">Debug using Chrome DevTools, check for
                         overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
@@ -59,7 +60,8 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">21 March 2025</h1>
                         </div>
-                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+                        <button onclick="myFunction()" id="button"
+                            class=" decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -67,9 +69,9 @@
                     </div>
                 </div>
 
-                <div class="bg-blue-50 rounded-md p-5 m-5">
+                <div class="task-container bg-blue-50 rounded-md p-5 m-5">
                     <h1 class="bg-white p-1 my-2 rounded-md inline-flex text-sm">CloudSync</h1>
-                    <h1 class="text-xl font-semibold">Add Dark Mode</h1>
+                    <h1 id="task" class="title text-xl font-semibold">Add Dark Mode</h1>
                     <p class="line-clamp-2 p-1 px-2 rounded-md bg-white my-2">Store the user's preference in
                         localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     <div class="flex justify-between pt-4 px-2 border-t-2 border-dashed border-blue-200 my-3">
@@ -77,7 +79,8 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">22 March 2025</h1>
                         </div>
-                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+                        <button onclick="myFunction()" id="button"
+                            class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -85,9 +88,9 @@
                     </div>
                 </div>
 
-                <div class="bg-blue-50 rounded-md p-5 m-5">
+                <div class="task-container bg-blue-50 rounded-md p-5 m-5">
                     <h1 class="bg-white p-1 my-2 rounded-md inline-flex text-sm">SwiftPay</h1>
-                    <h1 class="text-xl font-semibold">Optimize Home page </h1>
+                    <h1 class="title text-xl font-semibold">Optimize Home page </h1>
                     <p class="line-clamp-2 p-1 px-2 rounded-md bg-white my-2">Debug using Chrome DevTools, check for
                         overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
@@ -96,7 +99,8 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">23 March 2025</h1>
                         </div>
-                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+                        <button onclick="myFunction()" id="button"
+                            class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -104,9 +108,9 @@
                     </div>
                 </div>
 
-                <div class="bg-blue-50 rounded-md p-5 m-5">
+                <div class="task-container bg-blue-50 rounded-md p-5 m-5">
                     <h1 class="bg-white p-1 my-2 rounded-md inline-flex text-sm">Meta</h1>
-                    <h1 class="text-xl font-semibold">Add New Emoji 🤲</h1>
+                    <h1 class="title text-xl font-semibold">Add New Emoji 🤲</h1>
                     <p class="line-clamp-2 p-1 px-2 rounded-md bg-white my-2">Adding a new emoji involves designing,
                         standardizing, and integrating it into platforms like Unicode, messaging apps, and operating
                         systems.</p>
@@ -115,7 +119,8 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">24 March 2025</h1>
                         </div>
-                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+                        <button onclick="myFunction()"
+                            class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -123,9 +128,9 @@
                     </div>
                 </div>
 
-                <div class="bg-blue-50 rounded-md p-5 m-5">
+                <div class="task-container bg-blue-50 rounded-md p-5 m-5">
                     <h1 class="bg-white p-1 my-2 rounded-md inline-flex text-sm">Google LLC</h1>
-                    <h1 class="text-xl font-semibold">Integrate OpenAI API </h1>
+                    <h1 class="title text-xl font-semibold">Integrate OpenAI API </h1>
                     <p class="line-clamp-2 p-1 px-2 rounded-md bg-white my-2">Integrate OpenAI into your web app to
                         enable AI-powered features like chatbots, content generation, and automation.</p>
                     <div class="flex justify-between pt-4 px-2 border-t-2 border-dashed border-blue-200 my-3">
@@ -133,7 +138,8 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">25 March 2025</h1>
                         </div>
-                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+                        <button onclick="myFunction()"
+                            class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
@@ -141,9 +147,9 @@
                     </div>
                 </div>
 
-                <div class="bg-blue-50 rounded-md p-5 m-5">
+                <div class="task-container bg-blue-50 rounded-md p-5 m-5">
                     <h1 class="bg-white p-1 my-2 rounded-md inline-flex text-sm">Glassdoar</h1>
-                    <h1 class="text-xl font-semibold">Improve Job searching </h1>
+                    <h1 class="title text-xl font-semibold">Improve Job searching </h1>
                     <p class="line-clamp-2 p-1 px-2 rounded-md bg-white my-2">Debug using Chrome DevTools, check for
                         overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
@@ -152,35 +158,30 @@
                             <h1>Deadline</h1>
                             <h1 class="font-semibold">26 March 2025</h1>
                         </div>
-                        <button class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+                        <button onclick="myFunction()"
+                            class="decreaseButton increaseButton bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-700">
                             Completed
                         </button>
 
 
                     </div>
                 </div>
-
-
             </div>
-
 
         </main>
 
         <div class=" bg-white p-5 mt-5 ml-5 rounded-md">
             <div class=" border-b-2 border-dashed border-blue-200 flex justify-center gap-2 p-3">
                 <img src="assets/activity.png" alt="">
-                <h1 class=""> Activity Log</h1>
+                <h1 class="">Activity Log</h1>
 
             </div>
-            <div class="py-4 flex justify-center">
-                <button class=" bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-                    Clear History
-                </button>
-            </div>
+            <button id="activity-button"
+                class="bg-blue-800 text-white px-10 py-2 m-2 mx-10 rounded-md hover:bg-blue-700">
+                Clear History
+            </button>
 
-            <p class="bg-blue-50 inline-flex p-2 rounded-md">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-            <p class="bg-blue-50 inline-flex p-2 mt-2 rounded-md">You have Complete The Task Add Dark Mode at 12:48:15
-                PM</p>
+            <p id="activity" class="activity inline-block p-2 rounded-md"></p>
         </div>
     </div>
 
