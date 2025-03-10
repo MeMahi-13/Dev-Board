@@ -22,28 +22,84 @@
     </navbar>
 
     <main>
-        <div id="card" class="bg-white rounded-md mt-5 p-3">
-            <div class="border-b-2 border-dashed border-blue-200">Question-1: What are the different ways to select an
+        <div id="card" class="bg-white rounded-md my-5 p-3">
+            <div class="border-b-2 border-dashed border-blue-200 font-bold text-xl">Question-1: What are the different
+                ways to select an
                 element in the DOM?</div>
-            <p>In JavaScript, there are several methods to select elements within the Document Object Model (DOM):
-<br>
-                1. document.getElementById():
-                - Selects a single element by its unique `id` attribute.
+            <p class="m-2 text-lg">In JavaScript, there are several methods to select elements within the Document
+                Object Model (DOM):
+                <br>
+                1. <span class="text-blue-600">document.getElementById():</span>
+                Selects a single element by its id.
                 <br>
 
-                2. document.getElementsByClassName():
-                - Selects all elements with a specified `class` name.
+                2. <span class="text-blue-600">document.getElementsByClassName():</span>
+                Selects all elements with a class name.
                 <br>
-                3. document.getElementsByTagName():
-                - Selects all elements with a specified tag name.
+                3. <span class="text-blue-600">document.getElementsByTagName():</span>
+                Selects all elements with a specified tag name.
                 <br>
-                4. document.querySelector():
-                - Selects the first element that matches a specified CSS selector.
+                4. <span class="text-blue-600">document.querySelector():</span>
+                Selects the first element that matches a specified CSS selector.
                 <br>
-                5. document.querySelectorAll():
-                - Selects all elements that match a specified CSS selector.
+                5. <span class="text-blue-600">document.querySelectorAll():</span>
+                Selects all elements that match a specified CSS selector.
             </p>
 
+        </div>
+
+        <div id="card" class="bg-white rounded-md my-5 p-3">
+            <div class="border-b-2 border-dashed border-blue-200 font-bold text-xl">
+                Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </div>
+            <p class="m-2 text-lg">
+
+                innerHTML: Gets the HTML markup contained within an element.
+                <br>
+                innerText: Retrieves or sets the visible text content of an element.
+                <br>
+                textContent: Accesses all text within an element.
+            </p>
+        </div>
+
+        <div id="card" class="bg-white rounded-md my-5 p-3">
+            <div class="border-b-2 border-dashed border-blue-200 font-bold text-xl">
+                Question-3: What is event delegation in the DOM?
+            </div>
+            <p class="m-2 text-lg">
+                In the DOM, event delegation is a technique where you attach a single event listener to a
+                parent element instead of adding listeners to multiple child elements, allowing the parent to handle
+                events that occur on its children.
+            </p>
+        </div>
+
+        <div id="card" class="bg-white rounded-md my-5 p-3">
+            <div class="border-b-2 border-dashed border-blue-200 font-bold text-xl">
+                Question-4: What is event bubbling in the DOM?
+            </div>
+            <p class="m-2 text-lg">
+                Event bubbling in JavaScript is a mechanism where an event triggered on a child element propagates
+                upward through its ancestors in the DOM.
+            </p>
+        </div>
+
+        <div id="card" class="bg-white rounded-md my-5 p-3">
+            <div class="border-b-2 border-dashed border-blue-200 font-bold text-xl">
+                Question-5: How do you create, add, and remove elements using JavaScript?
+            </div>
+            <p class="m-2 text-lg">
+                1.To create a new HTML element:<br>
+                <span class="text-blue-600">const newElement = document.createElement('div');</span>
+                <br>
+                2.To add the newly created element to the DOM:<br>
+                <span class="text-blue-600">const parentElement = document.getElementById('parent');<br>
+                    parentElement.appendChild(newElement);</span>
+                <br>
+                3.To remove an element:<br> 
+                <span class="text-blue-600"> const elementToRemove = document.getElementById('elementId');<br>
+                    elementToRemove.remove();</span>
+
+            </p>
         </div>
 
     </main>
