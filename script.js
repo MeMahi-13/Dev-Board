@@ -67,7 +67,7 @@ function showDateAndDay() {
 
   showDateAndDay();
 
-//   activity
+//   alert
 
 function update() {
     alert("Board updated successfully!");
@@ -78,7 +78,7 @@ function update() {
     alert("Congrates, You completed all the tasks! :)")
   }
 
-
+// activity
 
 document.addEventListener('DOMContentLoaded', function () {
     const activityEl = document.getElementById('activity');
